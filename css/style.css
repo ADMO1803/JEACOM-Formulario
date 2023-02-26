@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,300;1,400&display=swap');
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container-form {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    transition:  all .5s ease-out;
+}
+
+.welcome-back {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color:white;
+}
+
+.message {
+    padding: 1rem;
+}
+
+.message h2 {
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    color:white;
+}
+
+.message button {
+    padding: 1rem;
+    font-weight: 400;
+    background-color:#7e7e7e;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: .9rem;
+    margin-top: 2rem;
+    transition: all .2s ease-in;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.479);
+    color: #fff;
+}
+
+.message button:hover {
+    background-color: #c5c5c5;
+    color: black;
+}
+
+.formulario {
+    width: 400px;
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.479);
+    background-color:none;
+    text-align: center;
+}
+
+.create-account {
+    padding: 2rem 0;
+    font-size: 1.7rem;
+    color: #fff;
+}
+
+.iconos {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.border-icon {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    border: solid thin rgb(0, 0, 0);
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: all .3s ease-in;
+    background-color: #fff;
+    
+}
+
+.border-icon:hover {
+    background-color:rgb(51, 51, 51);
+    cursor: pointer;
+}
+
+.cuenta-gratis {
+    padding: 1.5rem 0;
+    color: #f3f3f3;
+}
+
+.form_group {
+	position: relative;
+	color: black;
+}
+
+.formulario input {
+    width: 90%;
+	color: rgb(255, 255, 255);
+	padding: 10px;
+	margin-bottom: 16px;
+	border: none;
+	outline: none;
+	border-bottom: 2px solid black;
+	font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    background: none;
+}
+
+.formulario input[type="button"] {
+    padding: 1rem;
+    font-weight: 400;
+    background-color:#7e7e7e;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: .9rem;
+    margin-top: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.479);
+    transition: all .2s ease-in;
+    color: #fff;
+}
+
+.formulario input[type="button"]:hover {
+    background-color: #c5c5c5;
+    color: black;
+}
+
+.form_label {
+	position: absolute;
+	left: 15px;
+	transform: translateY(10px);
+	transition: all 0.3s;
+	pointer-events: none;
+    color: #fff;	
+}
+
+.formulario:focus {
+	outline: 0 solid;
+}
+
+.formulario input:focus + .form_label {
+	margin-top: -20px;
+	margin: none;
+}
+
+.fijar {
+	margin-top: -20px;
+	color: black;
+}
+
+.sign-in {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.sign-in.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sign-up.active {
+    opacity: 0;
+    visibility: hidden;
+}
